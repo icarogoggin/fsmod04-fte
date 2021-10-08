@@ -18,10 +18,12 @@ export const GamesList = () => {
   }, []);
 
   return (
-    <div className="cards">
+    <div className="cardcontainer">
+    <ul className="cards">
       {games.map((game, index) => (
         <GamesCard key={`game_list_${index}`} game={game}></GamesCard>
       ))}
+    </ul>
     </div>
   );
 };

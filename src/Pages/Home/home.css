@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center
+}
+
+li {
+    margin:1rem;
+}
+
+.cardimage{
+    width:250px;
+    border-radius: 10px;
+}
+
+.cardtitle{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .5s;
+    border-radius: 10px;
+}
