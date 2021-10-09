@@ -1,28 +1,28 @@
 export const Api = {
-  baseUrl: "http://localhost:3000",
+  baseUrl: 'http://localhost:3000',
 
   // Endpoint - Game
 
-  readAllUrl: () => Api.baseUrl + "/games",
+  readAllUrl: () => Api.baseUrl + '/games',
 
-  readByIdUrl: (id) => Api.baseUrl + "/games/" + id,
+  readByIdUrl: (id) => Api.baseUrl + '/games/' + id,
 
-  createGameUrl: () => Api.baseUrl + "/games",
+  createGameUrl: () => Api.baseUrl + '/games',
 
-  updateUrl: (id) => Api.baseUrl + "/games/" + id,
+  updateUrl: (id) => Api.baseUrl + '/games/' + id,
 
   // GET
   buildApiGetRequest: (url) =>
     fetch(url, {
-      method: "GET",
+      method: 'GET',
     }),
 
   // POST
   buildApiPostRequest: (url, body) =>
     fetch(url, {
-      method: "POST",
+      method: 'POST',
       headers: new Headers({
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       }),
       body: JSON.stringify(body),
     }),
@@ -30,9 +30,9 @@ export const Api = {
   // PATCH
   buildApiPatchRequest: (url, body) =>
     fetch(url, {
-      method: "PATCH",
+      method: 'PATCH',
       headers: new Headers({
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       }),
       body: JSON.stringify(body),
     }),

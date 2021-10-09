@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./profile.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './profile.css';
 
 function ProfileLogin() {
   return (
@@ -48,7 +48,9 @@ function ProfileLogin() {
                 </div>
               </div>
             </div>
-            <Link to="/accountconfig"><button class="manage-profiles">CONFIGURAÇÃO</button></Link>
+            <Link to="/accountconfig">
+              <button class="manage-profiles">CONFIGURAÇÃO</button>
+            </Link>
           </div>
         </div>
       </main>
