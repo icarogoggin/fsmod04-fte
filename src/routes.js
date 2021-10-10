@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Home from './src/Pages/Home/home';
-import Categories from './src/Pages/Categories/categories';
-import AccountConfig from './src/Pages/AccountConfig/accountConfig';
-import InfoView from './src/Pages/Info/info';
-import Login from './src/Pages/Login/login';
-import ProfileLogin from './src/Pages/ProfileLogin/profileLogin';
+import Home from './Pages/Home/home';
+import Categories from './Pages/Categories/categories';
+import AccountConfig from './Pages/AccountConfig/accountConfig';
+import InfoView from './Pages/Info/info';
+import Login from './Pages/Login/login';
+import ProfileLogin from './Pages/ProfileLogin/profileLogin';
 
 function Routes() {
   return (
