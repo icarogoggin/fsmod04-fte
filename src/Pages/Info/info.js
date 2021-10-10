@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Api } from "../../Components/Api/api";
+import GamesCard from "../../Components/GamesCard/GamesCard";
+// importar estilo dessa page
 
-function Info() {
-  return <h1>Info</h1>;
+export default function ViewGame(props) {
+    const id = props.match.params.id;
+
+    const [game, setGame] = useState(undefined);
+
+    useEffect(() => {
+        const loadGame = async () => {
+            const response = await Api.buildApiGetRequest(Api.readByIdUrl(id));
+
+            const results = await response.json();
+
+            setGame(results);
+        };
+
+        loadGame();
+    }, [id]);
+
+    if (!game) {
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div className="">
+            <div className="">
+            </div>
+
+            <GamesCard game={game} />
+        </div>
+    );
 }
-
-export default Info;

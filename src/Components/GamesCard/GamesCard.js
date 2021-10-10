@@ -22,11 +22,10 @@ export default function GamesCard({ game }) {
           <Link href="#" class="follow">
             ADD
           </Link>
-          
-          <Link href="#" class="info">
+
+          <Link to={`/view/${game.id}`} class="info">
             INFO
           </Link>
-
         </figcaption>
       </figure>
     </li>
