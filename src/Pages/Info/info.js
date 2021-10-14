@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Api } from "../../Components/Api/api";
 import GamesCard from "../../Components/GamesCard/GamesCard";
+import { NavBar } from '../../Components/NavBar/NavBar';
+import '../../Components/NavBar/NavBar.css';
 // importar estilo dessa page
 
 export default function ViewGame(props) {
@@ -27,6 +29,9 @@ export default function ViewGame(props) {
     return (
         <div className="">
             <div className="">
+            <div>
+        <NavBar />
+        </div>
             </div>
 
             <GamesCard game={game} />

@@ -48,7 +48,7 @@ function ProfileLogin() {
                 </div>
               </div>
             </div>
-            <Link to="/accountconfig">
+            <Link to="/config">
               <button class="manage-profiles">CONFIGURAÇÃO</button>
             </Link>
           </div>
