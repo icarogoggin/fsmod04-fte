@@ -1,8 +1,8 @@
 import React from 'react';
 import { GamesList } from '../../Components/GamesList/GamesList';
 import { NavBar } from '../../Components/NavBar/NavBar';
-import './home.css';
-import '../../Components/GamesCard/Card.css';
+// import './home.css';
+import '../../Components/GamesList/GamesList.scss';
 import '../../Components/NavBar/NavBar.css';
 
 export default function Home() {
@@ -12,14 +12,6 @@ export default function Home() {
         <NavBar />
       </div>
       <h2 className="titleshome">Jogos</h2>
-      <div>
-        <GamesList />
-      </div>
-      <h2 className="titleshome">Categoria 1</h2>
-      <div>
-        <GamesList />
-      </div>
-      <h2 className="titleshome">Categoria 2</h2>
       <div>
         <GamesList />
       </div>

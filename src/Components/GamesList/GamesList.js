@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import {React, useState, useEffect } from "react";
 import { Api } from "../Api/api";
 import GamesCard from "../GamesCard/GamesCard";
+import '../../Components/GamesCard/GamesCard.scss';
 
 export const GamesList = () => {
   const [games, setGames] = useState([]);

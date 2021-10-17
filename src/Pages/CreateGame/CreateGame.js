@@ -1,6 +1,6 @@
 import React from 'react';
 import { Api } from "../../Components/Api/api";
-import "../CreateGame/creategame.css";
+// import "../CreateGame/creategame.css";
 
 function CreateGame(props) {
   const handleSubmit = async event => {

@@ -1,0 +1,11 @@
+.cardcontainer {
+  width: 100vw;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: center;
+}

@@ -35,6 +35,18 @@ export const Api = {
 
   deleteProfileUrl: id => Api.baseUrl + '/profiles/' + id,
 
+    // Endpoint - Genres
+
+    readAllGenresUrl: () => Api.baseUrl + '/Genres',
+
+    readByGenresIdUrl: (id) => Api.baseUrl + '/Genres/' + id,
+  
+    createGenresUrl: () => Api.baseUrl + '/Genres',
+  
+    updateGenresUrl: (id) => Api.baseUrl + '/Genres/' + id,
+  
+    deleteGenresUrl: id => Api.baseUrl + '/Genres/' + id,
+
   // GET
   buildApiGetRequest: (url) =>
     fetch(url, {

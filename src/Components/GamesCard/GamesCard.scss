@@ -1,0 +1,43 @@
+$destac-color: #13a200;
+$primary-color: #ededed;
+$second-color: #434343;
+
+.gamescard__li {
+  background: $second-color;
+  width: 250px;
+  border-radius: 10px;
+  margin: 1rem;
+
+  .gamescard__li__cardgame {
+    margin-bottom: 1rem;
+
+    figcaption {
+      .button__cardgame {
+        background: $second-color;
+        display: flex;
+        padding: 0.5rem;
+        justify-content: space-around;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        .button__cardgame__add {
+          margin-right: 4%;
+          border-color: $destac-color;
+          color: $destac-color;
+        }
+        .button__cardgame__info {
+          margin-right: 4%;
+          border-color: $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transition: 0.3s;
+    }
+  }
+}

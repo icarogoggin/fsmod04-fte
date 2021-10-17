@@ -10,22 +10,23 @@ export default function GamesCard({ game }) {
   };
 
   return (
-    <li>
-      <figure class="cardgame">
+    <li className="gamescard__li">
+      <figure class="gamescard__li__cardgame">
         <img src={game.cover} alt={game.title} />
         <figcaption>
-          <h2>
+          {/* <h2>
             {game.title}
-            <span>{game.year}</span>
           </h2>
-          <p> {game.description}</p>
-          <Link href="#" class="follow">
+            <span>{game.year}</span>
+          <p> {game.description}[...]</p> */}
+          <div className="button__cardgame">
+          <Link href="#" class="button__cardgame__add">{/* follow */}
             ADD
           </Link>
-
-          <Link to={`/view/${game.id}`} class="info">
+          <Link to={`/view/${game.id}`} class="button__cardgame__info">{/* info */}
             INFO
           </Link>
+          </div>
         </figcaption>
       </figure>
     </li>

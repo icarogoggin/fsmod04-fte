@@ -4,11 +4,6 @@ export function NavBar() {
   return (
     <div class="page-wrapper">
       <nav class="navbar">
-        <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
         <ul class="containerlist">
           <li class="nav-item">
           <img
@@ -26,14 +21,8 @@ export function NavBar() {
           <li class="nav-item">
             <a href="/config">Minha Conta</a>
           </li>
-          {/* <li class="nav-item">
-            <a href="#">Minha Conta</a>
-          </li> */
-          /* <li class="nav-item">
-            <a href="#">Configurações</a>
-          </li> */}
-          <a href="/config">
-            <img className="profileImage" src="https://cdn-icons-png.flaticon.com/512/180/180678.png" alt="teste de imagem"/>
+          <a href="/profilelogin">
+            <img className="profileImage" src="https://icons-for-free.com/iconfiles/png/512/business+human+person+profile+seo+user+icon-1320186746402784223.png" alt="teste de imagem"/>
           </a>
         </ul>
       </nav>
