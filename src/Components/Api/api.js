@@ -1,7 +1,7 @@
 import { JwtHandler } from '../jwt-handler/JwtHandler';
 
 export const Api = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://fsmod04-back.herokuapp.com/',
 
   // Endpoint - Game
 
