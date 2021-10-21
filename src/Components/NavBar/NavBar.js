@@ -1,24 +1,25 @@
 import React from 'react';
 
 export function NavBar() {
+  
   return (
-    <div class="page-wrapper">
-      <nav class="navbar">
-        <ul class="containerlist">
-          <li class="nav-item">
+    <div className="page-wrapper">
+      <nav className="navbar">
+        <ul className="containerlist">
+          <li className="nav-item">
           <img
-          class="navbarLogo"
+          className="navbarLogo"
           src="https://image.flaticon.com/icons/png/512/588/588257.png"
           alt="xbox blue"
         />
           </li>
-          <li class="nav-item">
-            <a href="/home">Home</a>
+          <li className="nav-item">
+            <a href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="/categories">Categorias</a>
+          <li className="nav-item">
+            <a href="/categorias">Categorias</a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a href="/config">Minha Conta</a>
           </li>
           <a href="/profilelogin">

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Api } from '../../Components/Api/api';
+import { NavBar } from '../../Components/NavBar/NavBar';
+import { Link } from 'react-router-dom';
 
 function CreateUser(props) {
   const handleSubmit = async (event) => {
@@ -35,10 +37,13 @@ function CreateUser(props) {
 
   return (
     <div>
+            <div>
+        <NavBar />
+      </div>
       <form className="form" onSubmit={handleSubmit}>
         <div>
           <label className="form__label" htmlFor="name">
-            name:
+            Nome:
           </label>
         </div>
 
@@ -52,7 +57,7 @@ function CreateUser(props) {
         </div>
         <div>
           <label className="form__label" htmlFor="lastName">
-            lastName:
+            Sobrenome:
           </label>
         </div>
 
@@ -66,7 +71,7 @@ function CreateUser(props) {
         </div>
         <div>
           <label className="form__label" htmlFor="email">
-            e-mail:
+            E-mail:
           </label>
         </div>
 
@@ -80,7 +85,7 @@ function CreateUser(props) {
         </div>
         <div>
           <label className="form__label" htmlFor="password">
-            password:
+            Senha:
           </label>
         </div>
 
@@ -94,7 +99,7 @@ function CreateUser(props) {
         </div>
         <div>
           <label className="form__label" htmlFor="cpf">
-            cpf:
+            CPF:
           </label>
         </div>
 
@@ -109,6 +114,9 @@ function CreateUser(props) {
         <div>
           <input className="form__submit" type="submit" value="Add" />
         </div>
+        <Link to="/">
+        <button className="form__submit" width="320px">Voltar</button>
+      </Link>
       </form>
     </div>
   );

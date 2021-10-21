@@ -4,7 +4,6 @@ import { Api } from '../../Components/Api/api';
 import '../../Components/NavBar/NavBar.css';
 
 function AccountConfig(props) {
-  // substituir props pelo user autenticated
   const id = props.match.params.id;
 
   const [user, setUser] = useState(undefined);
@@ -49,8 +48,9 @@ function AccountConfig(props) {
 
     if (response.status === 200) {
       const id = body.id;
+      console.log(id)
 
-      props.history.push(`/profilelogin/`);
+      props.history.push('/profilelogin/'+id);
     } else {
       // Error
     }
@@ -65,7 +65,7 @@ function AccountConfig(props) {
         <form className="form" onSubmit={handleSubmit}>
           <div>
             <label className="form__label" htmlFor="name">
-              name:
+              Nome:
             </label>
           </div>
 
@@ -80,7 +80,7 @@ function AccountConfig(props) {
           </div>
           <div>
             <label className="form__label" htmlFor="lastName">
-              lastName:
+              Sobrenome:
             </label>
           </div>
 
@@ -95,7 +95,7 @@ function AccountConfig(props) {
           </div>
           <div>
             <label className="form__label" htmlFor="email">
-              e-mail:
+              E-mail:
             </label>
           </div>
 
@@ -110,7 +110,7 @@ function AccountConfig(props) {
           </div>
           <div>
             <label className="form__label" htmlFor="password">
-              password:
+              Senha:
             </label>
           </div>
 
@@ -120,12 +120,11 @@ function AccountConfig(props) {
               type="text"
               id="password"
               name="password"
-              defaultValue={user.password}
             />
           </div>
           <div>
             <label className="form__label" htmlFor="cpf">
-              cpf:
+              CPF:
             </label>
           </div>
 

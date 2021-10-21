@@ -1,5 +1,6 @@
 import React from 'react';
 import { Api } from "../../Components/Api/api";
+import { NavBar } from "../../Components/NavBar/NavBar"
 // import "../CreateGame/creategame.css";
 
 function CreateGame(props) {
@@ -41,6 +42,9 @@ function CreateGame(props) {
 
   return (
     <div>
+        <div>
+        <NavBar />
+      </div>
         <form className="form" onSubmit={handleSubmit}>
             <div>
                 <label className="form__label" htmlFor="title">

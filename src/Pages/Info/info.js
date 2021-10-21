@@ -36,7 +36,7 @@ export default function ViewGame(props) {
         <img src={game.cover} alt={game.title} />
       </div>
       <div className="container-info">
-        <div class="info-box">
+        <div className="info-box">
           <div className="game-title">
             <h1>{game.title}</h1>
           </div>

@@ -14,10 +14,10 @@ function ProfileLogin() {
       </div>
       <div className="container__manage-profile">
       <Link to="/createprofile">
-        <button class="profile__manage-profiles">ADD PERFIL</button>
+        <button className="profile__manage-profiles">ADD PERFIL</button>
       </Link>
       <Link to="/config">
-        <button class="profile__manage-profiles">CONFIGURAÇÃO</button>
+        <button className="profile__manage-profiles">CONFIGURAÇÃO</button>
       </Link>
       </div>
     </div>

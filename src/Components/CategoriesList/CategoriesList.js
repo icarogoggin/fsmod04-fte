@@ -1,30 +1,30 @@
-import {React, useState, useEffect } from "react";
-import { Api } from "../Api/api";
-import GamesCard from "../GamesCard/GamesCard";
-import '../../Components/NavBar/NavBar.css';
+import { React, useEffect, useState } from 'react';
+import { Api } from '../Api/api';
 
-export const CategoriesList = () => {
-  const [genres, setGenres] = useState([]);
+export default function GenreWithGame(props) {
+  const id = props.match.params.id;
+  const [categories, setCategorias] = useState([]);
 
   useEffect(() => {
-    const loadGenresList = async () => {
-      const response = await Api.buildApiGetRequest(Api.readAllGenresUrl());
-
+    const loadCategoriasList = async () => {
+      const response = await Api.buildApiGetRequest(
+        Api.readByIdGenreWithGamesUrl(id),
+      );
       const results = await response.json();
-
-      setGenres(results);
+      setCategorias(results);
+      console.log(results);
     };
+    loadCategoriasList();
+  }, [id]);
 
-    loadGenresList();
-  }, []);
-
-  return(
-    <div className="cardcontainer">
-    <ul className="cards">
-      {genres.games.map((genre, index) => (
-        <GamesCard key={`genre_list_${index}`} genre={genre}></GamesCard>
-      ))}
-    </ul>
-    </div>
-    );
+  return (
+    <>
+      <div>
+        {categories.games.map((game, gameIndex) => (
+          <div>{game.gameId}</div>
+          
+        ))}
+      </div>
+    </>
+  );
 }

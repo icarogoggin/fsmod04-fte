@@ -50,3 +50,21 @@
     color: rgba(1, 160, 67, 0.533);
   }
 }
+
+.deletebutton {
+  width: 200px;
+  display: block;
+  margin: 1em auto 0em auto;
+  font-size: max(1.2vw, 12px);
+  border: 1px solid grey;
+  color: grey;
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: transparent;
+.deletebutton:hover {
+  border: 1px solid rgba(1, 160, 67, 0.533);
+  color: rgba(1, 160, 67, 0.533);
+}
+}
